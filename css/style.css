@@ -1,0 +1,290 @@
+*{
+    box-sizing: border-box;
+}
+
+html, 
+body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: #f6f6f6;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+header{
+  background: #800015;  
+  height: 66px;
+  width: 100%;
+}
+
+header *{
+    color: white;
+}
+
+header .logo{
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+
+header .logo-text{
+   margin: 10px; 
+   font-family: 'Lucida Sans';
+} 
+
+header .logo-text span{
+    color: #ff002b;
+}
+
+header ul{
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+header ul li{
+    float: left;
+    position: relative;
+}
+
+header ul li ul{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    display: none;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul li{
+    width: 100%;
+    z-index:999;
+}
+
+header ul li ul li a{
+    padding: 10px;
+    color: #444;
+    background: rgba(255, 255, 255, 0.945);
+}
+
+header ul li ul li a:hover{
+background: #d4d4d4;
+}
+
+
+header ul li a{
+    display: block;
+    padding: 22px;
+    text-decoration: none;
+    font-size: 110%;
+}
+
+header ul li a:hover{
+    background: #5a000f;
+    transition: 0.5s;
+}
+
+/*Page Wrapper*/
+.page-wrapper{
+    min-height: 100%;
+}
+
+.page-wrapper .section1{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.page-wrapper .section1 .home{
+    color: #800015;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 12px;
+    width: 72%;
+}
+
+.page-wrapper .section2{
+    width: 72%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.page-wrapper .section2 .intro{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.page-wrapper .container1{
+    width: 300px;
+    height: 550px;
+    border: 2px solid #972a3e;
+    margin-right: 2%;
+    padding: 0;
+    float: right;
+    position: relative;
+    background: rgb(255, 255, 255);
+}
+
+.page-wrapper .container1 .name-heading{
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    font-style: italic;
+}
+
+
+.page-wrapper .container1 img{
+    height: 269px;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.page-wrapper .container1 .pic-title{
+    text-align: center;
+}
+
+.page-wrapper .container1 .container-content{
+    width: initial;
+    margin-top: 10px;
+}
+
+.page-wrapper .container1 .container-content .infobox{
+    text-align: left;
+}
+
+
+/*Footer*/
+footer{
+    background: #3b030c;
+    color: white;
+    height: 400px;
+    position: relative;
+}
+
+footer .footer-content{ 
+    height: 350px;
+    display: flex;
+}
+
+footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+}
+
+footer .footer-content h1,
+footer .footer-content h2{
+    color: white;
+}
+
+footer .footer-content .about h1 span{
+    color: #ff002b;
+}
+
+footer .footer-content .about .contacts span{
+    display: block;
+    font-size: 110%;
+    margin-bottom: 8px;
+}
+
+footer .footer-content .about .socials a{
+    border: 1px solid grey;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 130%;
+    border-radius: 5px;
+    transition: all .3s;
+
+}
+
+footer .footer-content .about .socials a:hover{
+    border: 1px solid white;
+    color: white;
+    transition: all .3s;
+}
+
+footer .footer-content .links ul{
+    margin-top: -10px;
+}
+
+
+footer .footer-content .links ul a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 120%;
+    transition: all .3s;
+    color: rgb(206, 197, 197);
+    text-decoration: none;
+    width: 50%;
+}
+
+footer .footer-content .links ul a:hover{
+    color: white;
+    margin-left: 19px;
+    font-size: 130%;
+    transition: all .3s;
+
+}
+
+footer .footer-content .contact-input{
+    background: #220308;
+    color: rgb(231, 226, 226);
+    margin-bottom: 17px;
+    line-height: 1.5rem;
+    padding: .9rem 1.4rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 110%;
+}
+footer .footer-content .contact-input:hover{
+    background: #000000;
+
+}
+
+footer .footer-content .contact-btn{
+    float: right;
+}
+
+footer .footer-content .btn-big{
+    background: #a30721;
+    height: 30px;
+    width: 70px;
+    border: none;
+    border-radius: 5px;
+    color:rgb(245, 233, 233);
+    transition: all .3s;
+}
+
+footer .footer-content .btn-big:hover{
+    background: #2e963c;
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    color:rgb(245, 233, 233);
+    transition: all .3s;
+}
+
+
+footer .footer-bottom{
+    background: #5f0514;
+    color: gray;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 17px;
+
+}
